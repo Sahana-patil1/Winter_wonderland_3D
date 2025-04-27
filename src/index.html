@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎄 Merry 3D Christmas 🎅</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Loading screen start -->
+    <div id="loading-screen">
+        <div class="scene">
+            <div class="word">
+                <div class="letter__wrap" style="--index: 0;">
+                    <div class="letter">
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 1;">
+                    <div class="letter">
+                        <div class="letter__panel">E</div>
+                        <div class="letter__panel">E</div>
+                        <div class="letter__panel">E</div>
+                        <div class="letter__panel">E</div>
+                        <div class="letter__panel">E</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 2;">
+                    <div class="letter">
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 3;">
+                    <div class="letter">
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                        <div class="letter__panel">R</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 4;">
+                    <div class="letter">
+                        <div class="letter__panel">Y</div>
+                        <div class="letter__panel">Y</div>
+                        <div class="letter__panel">Y</div>
+                        <div class="letter__panel">Y</div>
+                        <div class="letter__panel">Y</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 5;">
+                    <div class="letter">
+                        <div class="letter__panel">X</div>
+                        <div class="letter__panel">X</div>
+                        <div class="letter__panel">X</div>
+                        <div class="letter__panel">X</div>
+                        <div class="letter__panel">X</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 6;">
+                    <div class="letter">
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                        <div class="letter__panel">M</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 7;">
+                    <div class="letter">
+                        <div class="letter__panel">A</div>
+                        <div class="letter__panel">A</div>
+                        <div class="letter__panel">A</div>
+                        <div class="letter__panel">A</div>
+                        <div class="letter__panel">A</div>
+                    </div>
+                </div>
+                <div class="letter__wrap" style="--index: 8;">
+                    <div class="letter">
+                        <div class="letter__panel">S</div>
+                        <div class="letter__panel">S</div>
+                        <div class="letter__panel">S</div>
+                        <div class="letter__panel">S</div>
+                        <div class="letter__panel">S</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading screen end -->
+    <div id="temp-control" style="position:fixed; top:20px; right:20px; background:rgba(30,30,40,0.95); color:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2); padding:14px 18px 10px 18px; z-index:1000; min-width:180px; font-family:sans-serif;">
+        <label for="temp-slider" style="font-size:15px; font-weight:bold;">Temperature: <span id="temp-value">0</span>°C</label><br>
+        <input type="range" id="temp-slider" min="-10" max="10" value="0" step="0.1" style="width:140px; margin-top:8px;">
+    </div>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
